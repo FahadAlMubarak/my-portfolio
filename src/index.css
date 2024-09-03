@@ -93,3 +93,32 @@ body {
     text-align: center;
   }
 }
+
+.container {
+  display: flex;
+  align-items: center; /* Vertically center the content */
+  justify-content: space-between; /* Space between text and image */
+  height: 100vh; /* Full viewport height */
+  padding: 0 20px; /* Optional padding */
+}
+
+.banner {
+  flex: 1; /* Allow the banner to take up more space */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 20px; /* Space between text and image */
+}
+
+.image-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-div img {
+  border-radius: 50%; /* Makes the image circular */
+  width: 500px; /* Adjust the size as needed */
+  height: 500px; /* Make sure width and height are equal for a perfect circle */
+  object-fit: cover; /* Ensures the image covers the entire circular area */
+}
