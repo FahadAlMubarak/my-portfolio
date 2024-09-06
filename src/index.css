@@ -3,9 +3,16 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Poppins', sans-serif;
-  background-color: #121212;
+  background: linear-gradient(135deg, #1c1c1c 0%, #282828 50%, #333333 100%);
+  background-attachment: fixed;
+  transition: background-color 0.5s ease;
   color: #ffffff;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
 
 /* Navbar Container */
 .navbar {
@@ -18,6 +25,7 @@ body {
   border-radius: 8px;
   position: fixed;
   width: 100%;
+  height: 50px;
   top: 0;
   z-index: 1000;
 }
@@ -100,6 +108,7 @@ body {
   justify-content: space-between; /* Space between text and image */
   height: 100vh; /* Full viewport height */
   padding: 0 20px; /* Optional padding */
+  margin-left: 100px;
 }
 
 .banner {
@@ -110,6 +119,10 @@ body {
   padding-right: 20px; /* Space between text and image */
 }
 
+.banner h1 {
+  font-size: 4rem;
+  margin-bottom: 20px;
+}
 .image-div {
   display: flex;
   justify-content: center;
@@ -121,4 +134,168 @@ body {
   width: 500px; /* Adjust the size as needed */
   height: 500px; /* Make sure width and height are equal for a perfect circle */
   object-fit: cover; /* Ensures the image covers the entire circular area */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2), 0 0 15px rgba(0, 0, 0, 0.1) inset;
+  margin-right: 100px;
+}
+
+/* src/components/Skills.css */
+
+.skills-section {
+  height: 50vh;
+  text-align: center;
+  margin: 20px;
+  transition: background-color 0.5s ease;
+}
+
+.skills-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.skills-box {
+  display: inline-block;
+  width: 100%;
+  padding-bottom: 40px;
+  background: #595959;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2), 0 0 15px rgba(0, 0, 0, 0.1) inset;
+}
+
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  gap: 20px;
+  width: 650px; /* Adjust as needed */
+  margin: 0 auto;
+}
+
+.bubble {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  background: rgba(173, 216, 230, 0.5); /* Light blue, translucent */
+  border-radius: 50%;
+  box-shadow: inset 10px 10px 20px rgba(255, 255, 255, 0.6), 0 4px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.6s ease-in-out, box-shadow 0.6s ease-in-out;
+}
+
+.bubble:before {
+  content: "";
+  position: absolute;
+  top: 15%;
+  left: 15%;
+  width: 70%;
+  height: 70%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.8), transparent);
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.bubble img {
+  width: 50%;
+  height: 50%;
+  object-fit: contain;
+  position: relative;
+  z-index: 2;
+}
+
+.bubble:hover {
+  transform: rotate(360deg) scale(1.1);
+  box-shadow: inset 10px 10px 30px rgba(255, 255, 255, 0.8), 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 600px) {
+  .skills-container {
+    grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
+    gap: 10px;
+  }
+
+  .bubble {
+    width: 60px;
+    height: 60px;
+  }
+
+  .bubble img {
+    width: 40%;
+    height: 40%;
+  }
+}
+
+
+
+/* Project Section */
+.projects-section {
+  background: linear-gradient(135deg, #333333 0%, #444444 50%, #207f12 100%);
+  padding: 50px 0;
+  text-align: center;
+}
+
+.projects-title {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #ffffff;
+}
+
+/* Project Container */
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 0 20px;
+}
+
+/* Project Card */
+.project-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Project Image */
+.project-image {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+}
+
+/* Project Content */
+.project-content {
+  padding: 20px;
+}
+
+.project-title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.project-description {
+  font-size: 1rem;
+  margin-bottom: 15px;
+  color: #666;
+}
+
+.project-link {
+  font-size: 1rem;
+  color: #007bff;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+.project-link:hover {
+  color: #0056b3;
+  border-bottom: 2px solid #0056b3;
 }
