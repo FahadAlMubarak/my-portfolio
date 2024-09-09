@@ -1,0 +1,69 @@
+
+.container {
+  display: flex;
+  align-items: center; /* Vertically center the content */
+  justify-content: space-between; /* Space between text and image */
+  height: 100vh; /* Full viewport height */
+  padding-left: 100px; /* Optional padding */
+  /* margin-left: 100px; */
+  background-image: url("./public/background.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.banner {
+  flex: 1; /* Allow the banner to take up more space */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 20px; /* Space between text and image */
+  text-align: center;
+}
+
+.banner h1 {
+  font-size: 4rem;
+  margin-bottom: 20px;
+}
+
+.banner h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+.image-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-div img {
+  border-radius: 50%; /* Makes the image circular */
+  width: 500px; /* Adjust the size as needed */
+  height: 500px; /* Make sure width and height are equal for a perfect circle */
+  object-fit: cover; /* Ensures the image covers the entire circular area */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2), 0 0 15px rgba(0, 0, 0, 0.1) inset;
+  margin-right: 100px;
+}
+
+.btn {
+  margin-right: 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: #f0f0f0;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #ddd; /* On hover */
+}
+
+.btn svg {
+  color: #0e76a8; /* LinkedIn color */
+}
+
+.btn:nth-child(2) svg {
+  color: #333; /* GitHub color */
+}
