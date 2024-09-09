@@ -38,6 +38,16 @@ function Banner() {
             <FaGithub size={40} />
           </a>
         </div>
+        <div>
+          <a href="/public/FahadAlMubarakCV.pdf" download="FahadAlMubarakCV.pdf">
+            <button className="download-btn">Download My CV</button>
+          </a>
+        </div>
+        <div className="cv-link">
+          <a href="/cv" className="cv-button">
+            View My CV
+          </a>
+        </div>
       </div>
       <div className="image-div">
         <img src="/profile-image.jpg" alt="description" />
