@@ -5,12 +5,12 @@ function Navbar () {
         {/* <a href="#">
           <img src="" alt="logo" />
         </a> */}
-        <p className="logo">
+        <a href="/" className="logo">
           FA
-        </p>
+        </a>
       </div>
       <ul>
-        <li><a href="#Banner">Home</a></li>
+        <li><a href="/">Home</a></li>
         <li><a href="#Projects">Projects</a></li>
         <li><a href="#Skills">Skills</a></li>
         <li><a href="#Connect">Let's Connect </a></li>
