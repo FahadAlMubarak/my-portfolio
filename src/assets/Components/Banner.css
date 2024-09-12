@@ -85,3 +85,65 @@
 .download-btn:hover {
   background-color: #0056b3;
 }
+
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: auto;
+  }
+
+  .banner h1 {
+    font-size: 2.5rem; /* Reduce font size for mobile */
+  }
+
+  .banner h2 {
+    font-size: 1.5rem;
+  }
+
+  .image-div img {
+    width: 250px; /* Reduce image size for mobile */
+    height: 250px;
+    margin-right: 0; /* Remove margin on mobile */
+    margin-bottom: 20px; /* Add some margin below the image */
+  }
+
+  .banner {
+    padding-right: 0;
+    text-align: center;
+  }
+
+  .btn {
+    margin-right: 5px; /* Reduce margin between buttons on mobile */
+  }
+
+  .download-btn {
+    width: 100%; /* Make the download button full-width on mobile */
+    padding: 12px; /* Increase padding for better touch interaction */
+    font-size: 14px; /* Adjust font size for mobile */
+  }
+}
+
+@media (max-width: 480px) {
+  .banner h1 {
+    font-size: 2rem; /* Further reduce font size for very small screens */
+  }
+
+  .banner h2 {
+    font-size: 1.2rem;
+  }
+
+  .image-div img {
+    width: 200px; /* Further reduce image size */
+    height: 200px;
+  }
+
+  .download-btn {
+    font-size: 12px; /* Adjust font size */
+    padding: 10px; /* Adjust padding */
+  }
+}
