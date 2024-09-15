@@ -43,11 +43,11 @@ function Banner() {
             <button className="download-btn">Download My CV</button>
           </a>
         </div>
-        <div className="cv-link">
+        {/* <div className="cv-link">
           <a href="/cv" className="cv-button">
             View My CV
           </a>
-        </div>
+        </div> */}
       </div>
       <div className="image-div">
         <img src="/profile-image.jpg" alt="description" />

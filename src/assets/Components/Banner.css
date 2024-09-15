@@ -6,7 +6,7 @@
   height: 100vh; /* Full viewport height */
   padding-left: 100px; /* Optional padding */
   /* margin-left: 100px; */
-  background-image: url("./public/background.jpeg");
+  /* background-image: url("./public/background.jpeg"); */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -22,6 +22,7 @@
 }
 
 .banner h1 {
+  min-height: 4rem;
   font-size: 4rem;
   margin-bottom: 20px;
 }

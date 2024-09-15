@@ -52,7 +52,7 @@ const Skills = () => {
 
     <div className="skills-section" id='Skills'>
       <div className="skills-box">
-          <h2>Skills</h2>
+          <h2>My Skills</h2>
         <div className="skills-container">
           {skills.map((skill, index) => (
             <div key={index} className="bubble">
