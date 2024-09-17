@@ -14,7 +14,12 @@ const projects = [
     link: "https://dog4aday-2ac3166ea487.herokuapp.com/",
     image: "/public/dog4aday.png"
   },
-  
+
+  { name: "Comming Soon",
+    description: "More projects coming soon!",
+    link: "#",
+    image: "/public/coming-soon.png"
+  }
 ];
 
 function Projects() {

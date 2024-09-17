@@ -1,6 +1,6 @@
 .projects-section {
   padding: 50px 0;
-  height: 50vh;
+  height: 60vh;
   text-align: center;
 }
 
@@ -14,7 +14,7 @@
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
 }
 
 .project-card {
