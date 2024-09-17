@@ -15,6 +15,11 @@ const projects = [
     image: "/public/dog4aday.png"
   },
 
+  { name: "Comming Soon",
+    description: "More projects coming soon!",
+    link: "#",
+    image: "/public/coming-soon.png"
+  }
 ];
 
 function Projects() {

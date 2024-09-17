@@ -1,5 +1,6 @@
 // src/components/Skills.jsx
 import React, { useEffect, useRef, useState } from 'react';
+import './Skills.css';
 
 
 const skills = [
@@ -49,8 +50,7 @@ const Skills = () => {
       ref={skillsRef}
       className={`skills-section ${isActive ? 'active' : ''}`}
     >
-
-    <div className="skills-section" id='Skills'>
+    <div className="skills-section" id='Skills' >
       <div className="skills-box">
           <h2>My Skills</h2>
         <div className="skills-container">
