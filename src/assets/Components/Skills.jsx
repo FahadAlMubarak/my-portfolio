@@ -20,7 +20,7 @@ const skills = [
 
 
 
-const Skills = () => {
+const Skills = ({language}) => {
 
   const [isActive, setIsActive] = useState(false);
   const skillsRef = useRef(null);
@@ -44,6 +44,15 @@ const Skills = () => {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+    const translation = {
+      en: {
+        title: 'My Skills',
+      },
+      ar: {
+        title: 'مهاراتي',
+      },
+    };
   return (
 
     <div
@@ -52,7 +61,7 @@ const Skills = () => {
     >
     <div className="skills-section" id='Skills' >
       <div className="skills-box">
-          <h2>My Skills</h2>
+          <h2>{translation[language].title}</h2>
         <div className="skills-container">
           {skills.map((skill, index) => (
             <div key={index} className="bubble">

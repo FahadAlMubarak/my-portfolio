@@ -22,9 +22,9 @@ function App() {
         <Route path="/" element={
           <>
             <Banner language={language} />
-            <Skills />
-            <Projects />
-            <Connect />
+            <Skills language={language} />
+            <Projects language={language} />
+            <Connect language={language} />
           </>
         } />
       </Routes>
