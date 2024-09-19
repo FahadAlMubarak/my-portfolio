@@ -2,12 +2,14 @@ const Navbar = ({ onToggleLanguage, language }) => {
 
   const translation = {
     en: {
+      logo: 'FA',
       home: 'Home',
       projects: 'Projects',
       skills: 'Skills',
       connect: 'Let\'s Connect',
     },
     ar: {
+      logo: 'ف.ا',
       home: 'الرئيسية',
       projects: 'المشاريع',
       skills: 'المهارات',
@@ -19,7 +21,7 @@ const Navbar = ({ onToggleLanguage, language }) => {
     <nav className="navbar">
       <div className="logo">
         <a href="/" className="logo">
-          FA
+          {translation[language].logo}
         </a>
       </div>
       <ul>

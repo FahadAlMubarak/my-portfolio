@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 
-function Connect() {
+const Connect = ({language}) => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -12,9 +12,27 @@ function Connect() {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
+  const translation = {
+    en: {
+      title: 'Contact Me',
+      name: 'Your Name',
+      email: 'Your Email',
+      message: 'Your Message',
+      submit: 'Send Message',
+    },
+    ar: {
+      title: 'تواصل معي',
+      name: 'اسمك',
+      email: 'بريدك الإلكتروني',
+      message: 'رسالتك',
+      submit: 'إرسال الرسالة',
+
+    },
+  };
+
   return (
     <div className="contact-form-container">
-      <h2 id="Connect">Contact Me</h2>
+      <h2 id="Connect">{translation[language].title}</h2>
       <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
         <div className="form-group">
           <input
@@ -22,7 +40,7 @@ function Connect() {
             name="name"
             value={formData.name}
             onChange={handleChange}
-            placeholder="Your Name"
+            placeholder={translation[language].name}
             required
           />
         </div>
@@ -32,7 +50,7 @@ function Connect() {
             name="email"
             value={formData.email}
             onChange={handleChange}
-            placeholder="Your Email"
+            placeholder={translation[language].email}
             required
           />
         </div>
@@ -41,11 +59,11 @@ function Connect() {
             name="message"
             value={formData.message}
             onChange={handleChange}
-            placeholder="Your Message"
+            placeholder={translation[language].message}
             required
           />
         </div>
-        <button type="submit" className="submit-button">Send Message</button>
+        <button type="submit" className="submit-button">{translation[language].submit}</button>
       </form>
     </div>
   );
