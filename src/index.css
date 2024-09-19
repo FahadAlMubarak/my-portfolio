@@ -39,7 +39,6 @@ html {
   scroll-behavior: smooth;
 }
 
-
 /* Navbar Container */
 .navbar {
   display: flex;
@@ -133,6 +132,77 @@ html {
     /* width: 100%; */
     text-align: center;
   }
+}
+
+.toggle-switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 30px;
+}
+
+.toggle-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.switch {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 30px;
+}
+
+.slider {
+  position: absolute;
+  height: 26px;
+  width: 26px;
+  border-radius: 50%;
+  background-color: white;
+  bottom: 2px;
+  left: 2px;
+  transition: 0.4s;
+}
+
+input:checked + .switch .slider {
+  transform: translateX(30px);
+}
+
+input:checked + .switch {
+  background-color: #4caf50;
+}
+
+.labels {
+  position: absolute;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 5px;
+  top: 5px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.label-en {
+  color: white;
+}
+
+.label-ar {
+  color: white;
+}
+
+input:checked + .switch .label-en {
+  color: #ccc;
+}
+
+input:checked + .switch .label-ar {
+  color: white;
 }
 
 

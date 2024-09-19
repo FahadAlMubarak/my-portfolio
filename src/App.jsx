@@ -1,25 +1,32 @@
+import { useState } from 'react';
 import Navbar from "./assets/Components/Navbar";
 import Banner from "./assets/Components/Banner";
 import Skills from "./assets/Components/Skills";
 import Projects from "./assets/Components/Projects";
 import Connect from "./assets/Components/Connect";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import CVPage from './assets/Components/CVPage';
+
 
 function App() {
+
+  const [language, setLanguage] = useState('en');
+
+  const toggleLanguage = () => {
+    setLanguage((prevLanguage) => (prevLanguage === 'en' ? 'ar' : 'en'));
+  };
   return (
     <Router>
-      <Navbar />
+      <div dir={language === 'ar' ? 'rtl' : 'ltr'}></div>
+      <Navbar  onToggleLanguage={toggleLanguage} language={language} />
       <Routes>
         <Route path="/" element={
           <>
-            <Banner />
+            <Banner language={language} />
             <Skills />
             <Projects />
             <Connect />
           </>
         } />
-        <Route path="/cv" element={<CVPage />} />
       </Routes>
     </Router>
   );

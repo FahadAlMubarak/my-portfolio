@@ -4,10 +4,35 @@ import { FaLinkedin, FaGithub } from 'react-icons/fa';
 import './Banner.css';
 
 
-function Banner() {
+const Banner = ({language}) => {
+
+    const translation = {
+
+        en: {
+            title: 'Welcome to My Portfolio',
+            name: 'My name is Fahad Al-Mubarak and I am a ',
+            job: 'Software Engineer.',
+            job2: 'Full Stack Web Developer.',
+            download: 'Download My CV',
+        },
+
+        ar: {
+            title: 'مرحبًا بك في ملفي الشخصي',
+            name: ' اسمي فهد المبارك وأنا',
+            job: 'مهندس برمجيات.',
+            job2: 'مطور ويب Full Stack.',
+            download: 'تحميل سيرتي الذاتية',
+        }
+
+    };
+
+    const typewriterWords = {
+        en: ['Software Engineer', 'Full Stack Web Developer'],
+        ar: [' مهندس برمجيات', ' مطور ويب']
+    }
 
     const [typeEffect] = useTypewriter({
-    words: ['Software Engineer.', 'Full Stack Web Developer.'],
+    words: typewriterWords[language],
     loop: {},
     typeSpeed: 100,
     deleteSpeed: 40,
@@ -18,8 +43,8 @@ function Banner() {
   return (
     <div className='container' id='Banner'>
       <div className='banner'>
-        <h2>Welcome to My Portfolio</h2>
-        <h1>My name is Fahad Al-Mubarak and I am a <span>{typeEffect}</span><span><Cursor/></span> </h1>
+        <h2>{translation[language].title}</h2>
+        <h1>{translation[language].name}<span>{typeEffect}</span></h1>
         <div>
           <a
             href="https://www.linkedin.com/in/fahad-almubarak"
@@ -40,14 +65,9 @@ function Banner() {
         </div>
         <div>
           <a href="/public/FahadAlMubarakCV.pdf" download="FahadAlMubarakCV.pdf">
-            <button className="download-btn">Download My CV</button>
+            <button className="download-btn">{translation[language].download}</button>
           </a>
         </div>
-        {/* <div className="cv-link">
-          <a href="/cv" className="cv-button">
-            View My CV
-          </a>
-        </div> */}
       </div>
       <div className="image-div">
         <img src="/profile-image.jpg" alt="description" />
