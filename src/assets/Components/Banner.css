@@ -3,7 +3,7 @@
   display: flex;
   align-items: center; /* Vertically center the content */
   justify-content: space-between; /* Space between text and image */
-  height: 100vh; /* Full viewport height */
+  height: 90vh; /* Full viewport height */
   padding-left: 100px; /* Optional padding */
   /* margin-left: 100px; */
   /* background-image: url("./public/background.jpeg"); */
@@ -148,3 +148,4 @@
     padding: 10px; /* Adjust padding */
   }
 }
+

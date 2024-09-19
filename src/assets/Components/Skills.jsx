@@ -26,6 +26,7 @@ const Skills = () => {
   const skillsRef = useRef(null);
 
   useEffect(() => {
+
     const handleScroll = () => {
       const section = skillsRef.current;
       if (section) {
@@ -43,7 +44,6 @@ const Skills = () => {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
-
   return (
 
     <div
