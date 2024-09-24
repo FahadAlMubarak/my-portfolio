@@ -70,7 +70,7 @@ const Banner = ({language}) => {
         </div>
       </div>
       <div className="image-div">
-        <img src="/profile-image.jpg" alt="description" />
+        <img src="./Images/profile-image.jpg" alt="description" />
       </div>
     </div>
 

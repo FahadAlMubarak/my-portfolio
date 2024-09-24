@@ -12,7 +12,7 @@ const projects = [
       ar: ".تطبيق لحجز المرافق الرياضية",
     },
     link: "https://book-your-sport-6901111cfa04.herokuapp.com/",
-    image: "/public/bookyoursport.png"
+    image: "./Images/BookYourSport.png"
   },
   {
     name: {
@@ -24,7 +24,7 @@ const projects = [
       ar: ".حجز الكلاب ليوم واحد",
     },
     link: "https://dog4aday-2ac3166ea487.herokuapp.com/",
-    image: "/public/dog4aday.png"
+    image: "./Images/Dog4aDay.png"
   },
 
   {
@@ -37,7 +37,7 @@ const projects = [
       ar: ".المزيد من المشاريع قريباً",
     },
     link: "#",
-    image: "/public/coming-soon.png"
+    image: "./Images/coming-soon.png"
   }
 ];
 
