@@ -37,7 +37,7 @@ const projects = [
       ar: ".المزيد من المشاريع قريباً",
     },
     link: "#",
-    image: "./Images/coming-soon.png"
+    image: "./Images/comingsoon.jpeg"
   }
 ];
 

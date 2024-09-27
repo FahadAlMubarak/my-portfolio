@@ -10,7 +10,7 @@ const skills = [
   { name: 'React', logo: './Images/react.svg' },
   { name: 'Sass', logo: './Images/sass.svg' },
   { name: 'Ruby', logo: './Images/ruby.svg' },
-  { name: 'Ruby on RaIls', logo: './Images/rubyonraIls.svg' },
+  { name: 'Ruby on RaIls', logo: './Images/rubyonrails.svg' },
   { name: 'Python', logo: './Images/python.svg' },
   { name: 'postgreSQL', logo: './Images/postgresql.svg' },
   { name: 'Github', logo: './Images/github.svg' },
