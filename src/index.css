@@ -25,11 +25,6 @@ body {
         var(--c3) 0 180deg
       );
     background-size: var(--s) calc(var(--s) * 0.577);
-  /* background-image: url("./public/background.jpeg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat; */
-  /* background: linear-gradient(135deg, #1c1c1c 0%, #282828 50%, #333333 100%); */
   background-attachment: fixed;
   transition: background-color 0.5s ease;
   color: #ffffff;
@@ -75,7 +70,7 @@ html {
   list-style: none;
   display: flex;
   margin: 0;
-  padding: 0;
+  padding: 20px;
 }
 
 .navbar ul li {
