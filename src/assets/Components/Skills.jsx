@@ -22,29 +22,6 @@ const skills = [
 
 const Skills = ({language}) => {
 
-  const [isActive, setIsActive] = useState(false);
-  const skillsRef = useRef(null);
-
-  useEffect(() => {
-
-    const handleScroll = () => {
-      const section = skillsRef.current;
-      if (section) {
-        const sectionTop = section.getBoundingClientRect().top;
-        const sectionHeight = section.clientHeight;
-        const windowHeight = window.innerHeight;
-        if (sectionTop < windowHeight && sectionTop + sectionHeight > 0) {
-          setIsActive(true);
-        } else {
-          setIsActive(false);
-        }
-      }
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
     const translation = {
       en: {
         title: 'My Skills',
@@ -55,11 +32,8 @@ const Skills = ({language}) => {
     };
   return (
 
-    <div
-      ref={skillsRef}
-      className={`skills-section ${isActive ? 'active' : ''}`}
-    >
-    <div className="skills-section" id='Skills' >
+    <div id="Skills">
+    <div className="skills-section"  >
       <div className="skills-box">
           <h2>{translation[language].title}</h2>
         <div className="skills-container">
