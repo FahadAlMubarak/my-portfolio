@@ -54,6 +54,15 @@ const Projects = ({ language }) => {
 
   };
 
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false
+  };
+
 
   return (
     <div className="projects-section" id="Projects">
@@ -76,7 +85,9 @@ const Projects = ({ language }) => {
         ))}
       </div>
     </div>
+
   );
+
 }
 
 export default Projects;

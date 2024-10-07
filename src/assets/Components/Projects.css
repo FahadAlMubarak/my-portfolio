@@ -91,3 +91,37 @@
   inset: 5px;
   border-radius: 15px;
 }
+
+@media only screen and (max-width: 430px) {
+  .projects-container {
+    display: block;
+  }
+
+  .project-card {
+    width: 90%;
+    height: auto;
+    margin-bottom: 20px;
+    padding: 10px;
+    margin-left: 10px;
+  }
+
+  .projects-title {
+    font-size: 2rem;
+  }
+
+  .project-card img {
+    width: 95%;
+    height: auto;
+  }
+
+  .project-title {
+    font-size: 1.2rem;
+  }
+
+  .project-description {
+    font-size: 0.9rem;
+  }
+  .projects-section {
+    height: 200%;
+  }
+}
