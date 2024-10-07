@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './Connect.css';
 
 
 const Connect = ({language}) => {
