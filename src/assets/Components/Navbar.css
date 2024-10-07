@@ -1,0 +1,147 @@
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 10px;
+  background-color: #1e1e1e;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+  position: fixed;
+  width: 100%;
+  height: 50px;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Navbar Logo */
+.navbar .logo {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 3rem;
+    background: linear-gradient(90deg, #0f0, rgb(57, 170, 58), #0ff);
+    background-clip: text;
+    color: transparent;
+    position: relative;
+    margin-left: 10px;
+  }
+
+
+
+/* Navbar Links */
+.navbar ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 20px;
+}
+
+.navbar ul li {
+  padding-right: 20px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 18px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+/* 3D Hover Effect */
+.navbar ul li a::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, #195b09, #084d08);
+  border-radius: 5px;
+  z-index: -1;
+  transform: scale(0);
+  transition: all 0.3s ease;
+}
+
+.navbar ul li a:hover::before {
+  transform: scale(1);
+}
+
+.navbar ul li a:hover {
+  color: #121212;
+}
+
+.toggle-switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 30px;
+}
+
+.toggle-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.switch {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 30px;
+}
+
+.slider {
+  position: absolute;
+  height: 26px;
+  width: 26px;
+  border-radius: 50%;
+  background-color: white;
+  bottom: 2px;
+  left: 2px;
+  transition: 0.4s;
+}
+
+input:checked + .switch .slider {
+  transform: translateX(30px);
+}
+
+input:checked + .switch {
+  background-color: #4caf50;
+}
+
+.labels {
+  position: absolute;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 5px;
+  top: 5px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.label-en {
+  color: white;
+}
+
+.label-ar {
+  color: white;
+}
+
+input:checked + .switch .label-en {
+  color: #ccc;
+}
+
+input:checked + .switch .label-ar {
+  color: white;
+}
+
