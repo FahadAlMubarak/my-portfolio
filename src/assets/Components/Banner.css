@@ -1,23 +1,21 @@
 
 .container {
   display: flex;
-  align-items: center; /* Vertically center the content */
-  justify-content: space-between; /* Space between text and image */
-  height: 90vh; /* Full viewport height */
-  padding-left: 100px; /* Optional padding */
-  /* margin-left: 100px; */
-  /* background-image: url("./public/background.jpeg"); */
+  align-items: center;
+  justify-content: space-between;
+  height: 90vh;
+  padding-left: 100px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .banner {
-  flex: 1; /* Allow the banner to take up more space */
+  flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-right: 20px; /* Space between text and image */
+  padding-right: 20px;
   text-align: center;
 }
 
@@ -38,10 +36,10 @@
 }
 
 .image-div img {
-  border-radius: 50%; /* Makes the image circular */
-  width: 500px; /* Adjust the size as needed */
-  height: 500px; /* Make sure width and height are equal for a perfect circle */
-  object-fit: cover; /* Ensures the image covers the entire circular area */
+  border-radius: 50%;
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2), 0 0 15px rgba(0, 0, 0, 0.1) inset;
   margin-right: 100px;
 }
@@ -88,29 +86,15 @@
 }
 
 
-/* Media Queries for Mobile Responsiveness */
-@media (max-width: 768px) {
+@media only screen and (max-width: 430px) {
+  /* Stack content vertically */
   .container {
-    flex-direction: column;
+    flex-direction: column-reverse;
     justify-content: center;
-    padding-left: 20px;
-    padding-right: 20px;
+    align-items: center;
     height: auto;
-  }
-
-  .banner h1 {
-    font-size: 2.5rem; /* Reduce font size for mobile */
-  }
-
-  .banner h2 {
-    font-size: 1.5rem;
-  }
-
-  .image-div img {
-    width: 250px; /* Reduce image size for mobile */
-    height: 250px;
-    margin-right: 0; /* Remove margin on mobile */
-    margin-bottom: 20px; /* Add some margin below the image */
+    padding: 20px;
+    margin-top: 90px;
   }
 
   .banner {
@@ -118,34 +102,33 @@
     text-align: center;
   }
 
-  .btn {
-    margin-right: 5px; /* Reduce margin between buttons on mobile */
-  }
-
-  .download-btn {
-    width: 100%; /* Make the download button full-width on mobile */
-    padding: 12px; /* Increase padding for better touch interaction */
-    font-size: 14px; /* Adjust font size for mobile */
-  }
-}
-
-@media (max-width: 480px) {
   .banner h1 {
-    font-size: 2rem; /* Further reduce font size for very small screens */
+    font-size: 2rem;
+    width: 90%;
+    margin: 0 auto 10px auto;
   }
 
   .banner h2 {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+
+  .image-div {
+    margin-bottom: 20px;
   }
 
   .image-div img {
-    width: 200px; /* Further reduce image size */
-    height: 200px;
+    width: 150px;
+    height: 150px;
+    margin-right: 0;
+  }
+  .btn {
+    margin: 5px;
   }
 
   .download-btn {
-    font-size: 12px; /* Adjust font size */
-    padding: 10px; /* Adjust padding */
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
   }
 }
-
