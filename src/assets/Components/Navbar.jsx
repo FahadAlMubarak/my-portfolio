@@ -1,3 +1,6 @@
+
+import "./Navbar.css";
+
 const Navbar = ({ onToggleLanguage, language }) => {
 
   const translation = {
