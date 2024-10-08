@@ -1,3 +1,7 @@
+#Skills {
+  scroll-margin-top: 50px; /* Adjust this value to suit your needs */
+}
+
 .skills-section {
   height: 30vh;
   text-align: center;
@@ -81,7 +85,7 @@
   }
   .skills-box {
     width: 100%;
-    padding-bottom: 10px;
+    padding: 10px;
   }
   .skills-container {
     width: 100%;
