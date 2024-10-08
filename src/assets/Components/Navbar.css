@@ -16,7 +16,6 @@
   transition: border-radius 0.5s ease;
 }
 
-/* Navbar Logo */
 .navbar .logo {
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
@@ -28,9 +27,6 @@
     margin-left: 10px;
   }
 
-
-
-/* Navbar Links */
 .navbar ul {
   list-style: none;
   display: flex;
@@ -52,7 +48,6 @@
   position: relative;
 }
 
-/* 3D Hover Effect */
 .navbar ul li a::before {
   content: '';
   position: absolute;
@@ -146,9 +141,9 @@ input:checked + .switch .label-ar {
   color: white;
 }
 
-/* Burger menu */
+
 .burger {
-  display: none; /* Hide burger by default */
+  display: none; 
   flex-direction: column;
   cursor: pointer;
   padding-right: 30px;
@@ -180,17 +175,17 @@ input:checked + .switch .label-ar {
     border-bottom-right-radius: 0;
   }
   .navbar ul {
-    display: none; /* Hide the navbar links on mobile by default */
+    display: none;
     flex-direction: column;
     position: absolute;
     top: 50px;
     right: 0;
     background-color: #1e1e1e;
-    width: 100%; /* Full width on mobile */
+    width: 100%;
     padding: 10px 0;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
-    z-index: 999; /* Ensure the dropdown stays above other elements */
+    z-index: 999;
   }
 
   .navbar ul li {
@@ -201,33 +196,33 @@ input:checked + .switch .label-ar {
   }
 
   .navbar ul.open {
-    display: flex; /* Show the navbar links when the burger is clicked */
+    display: flex;
     flex-direction: column;
     justify-content: flex-start;
     width: 100%;
-    background-color: #1e1e1e; /* Ensures background matches the navbar */
+    background-color: #1e1e1e;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Add shadow to give a dropdown effect */
-    transition: max-height 0.3s ease-in-out; /* Smooth opening transition */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    transition: max-height 0.3s ease-in-out;
     margin-top: 30px;
   }
 
   .burger {
-    display: flex; /* Show the burger menu on mobile */
+    display: flex;
   }
 
   .toggle-switch {
     display: flex;
-    justify-content: center; /* Center the switch horizontally */
-    margin-top: 10px; /* Adjust margin as needed */
+    justify-content: center;
+    margin-top: 10px;
     margin-left: 45%;
   }
 
   .switch {
     display: flex;
     align-items: center;
-    justify-content: center; /* Center the switch within its container */
+    justify-content: center;
   }
 
   .navbar .logo {

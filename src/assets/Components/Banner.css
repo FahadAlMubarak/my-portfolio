@@ -10,6 +10,10 @@
   background-repeat: no-repeat;
 }
 
+#Banner {
+  scroll-margin-top: 100px;
+}
+
 .banner {
   flex: 1;
   display: flex;
@@ -56,15 +60,15 @@
 }
 
 .btn:hover {
-  background-color: #ddd; /* On hover */
+  background-color: #ddd;
 }
 
 .btn svg {
-  color: #0e76a8; /* LinkedIn color */
+  color: #0e76a8;
 }
 
 .btn:nth-child(2) svg {
-  color: #333; /* GitHub color */
+  color: #333;
 }
 
 
@@ -87,7 +91,7 @@
 
 
 @media only screen and (max-width: 430px) {
-  /* Stack content vertically */
+  
   .container {
     flex-direction: column-reverse;
     justify-content: center;

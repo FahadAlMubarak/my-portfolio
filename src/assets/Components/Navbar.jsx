@@ -28,7 +28,7 @@ const Navbar = ({ onToggleLanguage, language }) => {
   return (
     <nav className={`navbar ${isOpen ? "open" : ""}`}>
       <div className="logo">
-        <a href="/" className="logo">
+        <a href="#Banner" className="logo">
           {translation[language].logo}
         </a>
       </div>
