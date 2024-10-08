@@ -13,6 +13,8 @@ const Connect = ({language}) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
+
+
   const translation = {
     en: {
       title: 'Contact Me',
@@ -34,7 +36,7 @@ const Connect = ({language}) => {
   return (
     <div className="contact-form-container">
       <h2 id="Connect">{translation[language].title}</h2>
-      <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+      <form action="https://formspree.io/f/mdkonbka" method="POST">
         <div className="form-group">
           <input
             type="text"
@@ -43,6 +45,7 @@ const Connect = ({language}) => {
             onChange={handleChange}
             placeholder={translation[language].name}
             required
+            minLength={3}
           />
         </div>
         <div className="form-group">
