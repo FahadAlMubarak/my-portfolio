@@ -64,7 +64,7 @@ const Banner = ({language}) => {
           </a>
         </div>
         <div>
-          <a href="./Images/FahadAlMubarakCV.pdf" download="FahadAlMubarakCV.pdf">
+          <a href="./Images/FahadAl-mubarakCV.pdf" download="FahadAl-mubarakCV.pdf">
             <button className="download-btn">{translation[language].download}</button>
           </a>
         </div>
